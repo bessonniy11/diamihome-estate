@@ -1,0 +1,296 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700,900&display=swap);
+
+@font-face {
+    font-family: icons;
+    font-display: swap;
+    src: url(../fonts/icons.woff2) format("woff2"), url(../fonts/icons.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: protext-bold;
+    src: url(../fonts/FontsFree-Net-SFProText-Bold.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: protext-medium;
+    src: url(../fonts/FontsFree-Net-SFProText-Medium.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: protext-regular;
+    src: url(../fonts/FontsFree-Net-SFProText-Regular.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal
+}
+
+
+[class*=_icon-]:before {
+    font-family: icons;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+[class*=_icon-]:before {
+    display: block
+}
+
+._icon-facebook:before {
+    content: "\e900"
+}
+
+._icon-inst:before {
+    content: "\e901"
+}
+
+._icon-vk:before {
+    content: "\e902"
+}
+
+._icon-youtube .path1:before {
+    content: "\e903"
+}
+
+._icon-youtube .path2:before {
+    content: "\e904"
+}
+
+._icon-youtube .path3:before {
+    content: "\e905"
+}
+
+._icon-account:before {
+    content: "\e906"
+}
+
+._icon-arrow-body-r:before {
+    content: "\e907"
+}
+
+._icon-arrow-catalog-l:before {
+    content: "\e908"
+}
+
+._icon-arr-white:before {
+    content: "\e90d"
+}
+
+._icon-cart:before {
+    content: "\e90e"
+}
+
+._icon-check:before {
+    content: "\e90f"
+}
+
+._icon-close:before {
+    content: "\e910"
+}
+
+._icon-close-popup:before {
+    content: "\e911"
+}
+
+._icon-down-catalog2:before {
+    content: "\e913"
+}
+
+._icon-eye:before {
+    content: "\e914"
+}
+
+._icon-filter-btn:before {
+    content: "\e915"
+}
+
+._icon-logo:before {
+    content: "\e919"
+}
+
+._icon-loop:before {
+    content: "\e91a"
+}
+
+._icon-percent:before {
+    content: "\e91c"
+}
+
+._icon-p-left:before {
+    content: "\e91d"
+}
+
+._icon-p-right:before {
+    content: "\e920"
+}
+
+._icon-question:before {
+    content: "\e921"
+}
+
+._icon-r-catalog:before {
+    content: "\e922"
+}
+
+
+
+._icon-sidebar-btn:before {
+    content: "\e926"
+}
+
+._icon-trash:before {
+    content: "\e927"
+}
+
+._icon-right-chevron:before {
+    content: "\e929"
+}
+
+._icon-left-chevron:before {
+    content: "\e92a"
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+/* DEFAULT START */
+
+body,
+html {
+    height: 100%;
+    min-width: 320px
+}
+
+body {
+    color: #000;
+    background-color: #EDF2F6;
+    line-height: 1;
+    font-family: protext, sans-serif;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+button,
+input,
+textarea {
+    font-family: Roboto;
+    font-size: inherit
+}
+
+button {
+    cursor: pointer;
+    color: inherit;
+    background-color: inherit
+}
+
+a {
+    color: inherit
+}
+
+a:link,
+a:visited {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none
+}
+
+ul li {
+    list-style: none
+}
+
+img {
+    vertical-align: top
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit
+}
+
+body .lock {
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none
+}
+
+.wrapper {
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden
+}
+
+.wrapper>main {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+.wrapper>* {
+    min-width: 0
+}
+
+[class*=__container] {
+    max-width: 754px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0 auto;
+    padding: 0 .9375rem
+}
+
+[class*=-ibg] {
+    position: relative
+}
+
+[class*=-ibg] img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+[class*=-ibg_contain] img {
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+/* DEFAULT END */

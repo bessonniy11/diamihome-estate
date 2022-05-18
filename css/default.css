@@ -29,7 +29,20 @@
     font-weight: 400;
     font-style: normal
 }
+/* 
+@font-face {
+    font-family: 'TT Norms';
+    src: url(../fonts/TTNormsPro-Medium.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal
+}
 
+@font-face {
+    font-family: 'TT Norms';
+    src: url(../fonts/TTNormsPro-Regular.ttf) format("ttf");
+    font-weight: 400;
+    font-style: normal
+} */
 
 [class*=_icon-]:before {
     font-family: icons;
@@ -182,16 +195,22 @@ html {
 }
 
 body {
-    color: #000;
-    background-color: #EDF2F6;
+    color: #333333;
+    background-color: #fff;
     line-height: 1;
-    font-family: protext, sans-serif;
+    font-family: 'TT Norms Pro';
     font-size: 14px;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
+}
+
+body .lock {
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none
 }
 
 button,
@@ -238,12 +257,6 @@ h6 {
     font-size: inherit
 }
 
-body .lock {
-    overflow: hidden;
-    -ms-touch-action: none;
-    touch-action: none
-}
-
 .wrapper {
     min-height: 100%;
     display: -webkit-box;
@@ -267,11 +280,11 @@ body .lock {
 }
 
 [class*=__container] {
-    max-width: 754px;
+    max-width: 994px;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
     margin: 0 auto;
-    padding: 0 .9375rem
+    padding: 0 20px;
 }
 
 [class*=-ibg] {
